@@ -3,11 +3,9 @@ const express = require("express");
 
 const app = express();
 
-const port = 3000;
+const todoRoutes = require('./routes/todoRoutes');
 
-app.get('/', (req, res) => {
-  res.send('😎');
-});
+const port = 3000;
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
@@ -16,3 +14,6 @@ app.listen(port, () => {
 process.on("SIGTERM", () => {
   process.exit(0)
 })
+
+// routes
+app.use('/', todoRoutes);

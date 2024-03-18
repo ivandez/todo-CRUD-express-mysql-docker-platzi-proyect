@@ -1,0 +1,15 @@
+{
+  "name": "express-mysql-docker",
+  "version": "1.0.0",
+  "description": "TODO app CRUD to practice my knowledge of docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "Ivan Mendez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

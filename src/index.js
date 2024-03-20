@@ -16,4 +16,4 @@ process.on("SIGTERM", () => {
 })
 
 // routes
-app.use('/', todoRoutes);
+app.use('/api/v1/todo', todoRoutes);
